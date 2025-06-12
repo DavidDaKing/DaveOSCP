@@ -6,5 +6,4 @@ Set up directories for the syllabus and schedule
 
 
 ## References
-yo
 -[An array of resources for OSCP](https://github.com/0x4D31/awesome-oscp#cheatsheets-and-scripts)
