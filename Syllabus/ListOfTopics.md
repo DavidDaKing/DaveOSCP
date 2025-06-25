@@ -1,6 +1,6 @@
 # Below are the list of topics from stated from the syllabus
 
-## Course Introduction
+## Course Introduction **COMPLETED
 
 ### Connect to and interact over the PWK VPN
 
@@ -22,13 +22,13 @@
 
 ### Career Opportunities in Cybersecurity * Important
 
-## Effective Learning Strategies
+## Effective Learning Strategies **COMPLETED
 
-## Report Writing for Penetration Testers
+## Report Writing for Penetration Testers **COMPLETED
 
-## Information gathering * I have prior experience
+## Information gathering * I have prior experience **COMPLETED
 
-## Vulnerability Scanning * I have prior experience
+## Vulnerability Scanning * I have prior experience **COMPLETED
 
 ## Intro to web applications
 
