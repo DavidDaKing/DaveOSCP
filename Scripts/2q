@@ -1,0 +1,5 @@
+def main():
+    print("HTTP Server is up!") 
+
+if __name__ == "__main__":
+    main()
