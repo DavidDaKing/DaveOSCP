@@ -10,8 +10,10 @@ import subprocess
 import os
 
 # Global Host var
-# Global prt var
+# May have to assign it to tun0 ip address
 HOST = "0.0.0.0"
+
+# Global port var
 PORT = 9999
 
 
