@@ -30,9 +30,9 @@
 
 ## Vulnerability Scanning * I have prior experience **COMPLETED
 
-## Intro to web applications
+## Intro to web applications **Completed
 
-## Common Web Application Attacks * Click-jacking prior experience
+## Common Web Application Attacks **Completed, click jacking was not in here.
 
 ## SQL Injection Attacks
 
