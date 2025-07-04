@@ -1,0 +1,16 @@
+POST /administrator/index.php HTTP/1.1
+Host: 10.10.90.218
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 106
+Origin: http://10.10.90.218
+Connection: keep-alive
+Referer: http://10.10.90.218/administrator/
+Cookie: eaa83fe8b963ab08ce9ab7d4a798de05=0ddkddsq7nvmm9r0n4pfq73ei4; 2b01af51830ca9615359108de04d9ca1=f0k6m9mp55n3sjtmjnugj5o6a6
+Upgrade-Insecure-Requests: 1
+Priority: u=0, i
+
+username=asd&passwd=asd&option=com_login&task=login&return=aW5kZXgucGhw&23402dec0f3f279d7781898709f66e0b=1
