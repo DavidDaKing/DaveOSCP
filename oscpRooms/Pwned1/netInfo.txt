@@ -1,0 +1,3 @@
+Me (Kali Linux) -> 192.168.45.159
+
+Linux box (target) -> 192.168.189.95
