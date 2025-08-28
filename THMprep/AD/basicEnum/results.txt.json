@@ -1,0 +1,618 @@
+{
+    "target": {
+        "host": "10.211.11.10"
+    },
+    "credentials": {
+        "auth_method": "null",
+        "user": "",
+        "password": "",
+        "domain": "",
+        "ticket_file": "",
+        "nthash": "",
+        "random_user": "zvcirfna"
+    },
+    "listeners": {
+        "LDAP": {
+            "port": 389,
+            "accessible": true
+        },
+        "LDAPS": {
+            "port": 636,
+            "accessible": true
+        },
+        "SMB": {
+            "port": 445,
+            "accessible": true
+        },
+        "SMB over NetBIOS": {
+            "port": 139,
+            "accessible": true
+        }
+    },
+    "is_parent_dc": true,
+    "is_child_dc": false,
+    "long_domain": "tryhackme.loc",
+    "domain": null,
+    "nmblookup": null,
+    "smb_dialects": {
+        "Supported dialects": {
+            "SMB 1.0": true,
+            "SMB 2.0.2": true,
+            "SMB 2.1": true,
+            "SMB 3.0": true,
+            "SMB 3.1.1": true
+        },
+        "Preferred dialect": "SMB 3.0",
+        "SMB1 only": false,
+        "SMB signing required": true
+    },
+    "smb_domain_info": {
+        "NetBIOS computer name": "DC",
+        "NetBIOS domain name": "TRYHACKME",
+        "DNS domain": "tryhackme.loc",
+        "FQDN": "DC.tryhackme.loc",
+        "Derived membership": "domain member",
+        "Derived domain": "TRYHACKME"
+    },
+    "sessions": {
+        "sessions_possible": true,
+        "null": true,
+        "password": false,
+        "Kerberos": false,
+        "NTLM": false,
+        "guest": false
+    },
+    "rpc_domain_info": {
+        "Domain": "TRYHACKME",
+        "Domain SID": "S-1-5-21-1966530601-3185510712-10604624",
+        "Membership": "domain member"
+    },
+    "os_info": {
+        "OS": "Windows Server 2019 Datacenter 17763",
+        "OS version": "10.0",
+        "OS release": "1809",
+        "OS build": "17763",
+        "Native OS": "Windows Server 2019 Datacenter 17763",
+        "Native LAN manager": "Windows Server 2019 Datacenter 6.3",
+        "Platform id": "500",
+        "Server type": "0x84102b",
+        "Server type string": "Wk Sv PDC Tim NT LMB"
+    },
+    "users": {
+        "500": {
+            "username": "Administrator",
+            "name": "(null)",
+            "acb": "0x00000210",
+            "description": "Built-in account for administering the computer/domain"
+        },
+        "501": {
+            "username": "Guest",
+            "name": "(null)",
+            "acb": "0x00000215",
+            "description": "Built-in account for guest access to the computer/domain"
+        },
+        "502": {
+            "username": "krbtgt",
+            "name": "(null)",
+            "acb": "0x00020011",
+            "description": "Key Distribution Center Service Account"
+        },
+        "1609": {
+            "username": "sshd",
+            "name": "sshd",
+            "acb": "0x00000210",
+            "description": "(null)"
+        },
+        "1616": {
+            "username": "gerald.burgess",
+            "name": "Gerald Burgess",
+            "acb": "0x00020010",
+            "description": "(null)"
+        },
+        "1617": {
+            "username": "nigel.parsons",
+            "name": "Nigel Parsons",
+            "acb": "0x00020010",
+            "description": "(null)"
+        },
+        "1618": {
+            "username": "guy.smith",
+            "name": "Guy Smith",
+            "acb": "0x00020010",
+            "description": "(null)"
+        },
+        "1619": {
+            "username": "jeremy.booth",
+            "name": "Jeremy Booth",
+            "acb": "0x00020010",
+            "description": "(null)"
+        },
+        "1620": {
+            "username": "barbara.jones",
+            "name": "Barbara Jones",
+            "acb": "0x00020010",
+            "description": "(null)"
+        },
+        "1621": {
+            "username": "marion.kay",
+            "name": "Marion Kay",
+            "acb": "0x00020010",
+            "description": "(null)"
+        },
+        "1622": {
+            "username": "kathryn.williams",
+            "name": "Kathryn Williams",
+            "acb": "0x00020010",
+            "description": "(null)"
+        },
+        "1623": {
+            "username": "danny.baker",
+            "name": "Danny Baker",
+            "acb": "0x00020010",
+            "description": "(null)"
+        },
+        "1624": {
+            "username": "gary.clarke",
+            "name": "Gary Clarke",
+            "acb": "0x00020010",
+            "description": "(null)"
+        },
+        "1625": {
+            "username": "daniel.turner",
+            "name": "Daniel Turner",
+            "acb": "0x00020010",
+            "description": "(null)"
+        },
+        "1626": {
+            "username": "debra.yates",
+            "name": "Debra Yates",
+            "acb": "0x00020010",
+            "description": "(null)"
+        },
+        "1627": {
+            "username": "jeffrey.thompson",
+            "name": "Jeffrey Thompson",
+            "acb": "0x00020010",
+            "description": "(null)"
+        },
+        "1628": {
+            "username": "martin.riley",
+            "name": "Martin Riley",
+            "acb": "0x00020010",
+            "description": "(null)"
+        },
+        "1629": {
+            "username": "danielle.lee",
+            "name": "Danielle Lee",
+            "acb": "0x00020010",
+            "description": "(null)"
+        },
+        "1630": {
+            "username": "douglas.roberts",
+            "name": "Douglas Roberts",
+            "acb": "0x00020010",
+            "description": "(null)"
+        },
+        "1631": {
+            "username": "dawn.bolton",
+            "name": "Dawn Bolton",
+            "acb": "0x00020011",
+            "description": "(null)"
+        },
+        "1632": {
+            "username": "danielle.ali",
+            "name": "Danielle Ali",
+            "acb": "0x00020010",
+            "description": "(null)"
+        },
+        "1633": {
+            "username": "michelle.palmer",
+            "name": "Michelle Palmer",
+            "acb": "0x00020011",
+            "description": "(null)"
+        },
+        "1634": {
+            "username": "katie.thomas",
+            "name": "Katie Thomas",
+            "acb": "0x00000211",
+            "description": "(null)"
+        },
+        "1635": {
+            "username": "jennifer.harding",
+            "name": "Jennifer Harding",
+            "acb": "0x00020010",
+            "description": "(null)"
+        },
+        "1636": {
+            "username": "strategos",
+            "name": "strategos",
+            "acb": "0x00000210",
+            "description": "(null)"
+        },
+        "1637": {
+            "username": "empanadal0v3r",
+            "name": "empanadal0v3r",
+            "acb": "0x00000210",
+            "description": "(null)"
+        },
+        "1638": {
+            "username": "drgonz0",
+            "name": "drgonz0",
+            "acb": "0x00000210",
+            "description": "(null)"
+        },
+        "1639": {
+            "username": "strate905",
+            "name": "strate905",
+            "acb": "0x00000210",
+            "description": "(null)"
+        },
+        "1640": {
+            "username": "krbtgtsvc",
+            "name": "Kerb Svc",
+            "acb": "0x00000210",
+            "description": "(null)"
+        },
+        "1641": {
+            "username": "asrepuser1",
+            "name": "(null)",
+            "acb": "0x00010210",
+            "description": "(null)"
+        },
+        "2609": {
+            "username": "rduke",
+            "name": "Raoul Duke",
+            "acb": "0x00000210",
+            "description": "(null)"
+        },
+        "4609": {
+            "username": "user",
+            "name": "User",
+            "acb": "0x00000210",
+            "description": "(null)"
+        }
+    },
+    "groups": {
+        "517": {
+            "groupname": "Cert Publishers",
+            "type": "local"
+        },
+        "553": {
+            "groupname": "RAS and IAS Servers",
+            "type": "local"
+        },
+        "571": {
+            "groupname": "Allowed RODC Password Replication Group",
+            "type": "local"
+        },
+        "572": {
+            "groupname": "Denied RODC Password Replication Group",
+            "type": "local"
+        },
+        "1109": {
+            "groupname": "DnsAdmins",
+            "type": "local"
+        },
+        "549": {
+            "groupname": "Server Operators",
+            "type": "builtin"
+        },
+        "548": {
+            "groupname": "Account Operators",
+            "type": "builtin"
+        },
+        "554": {
+            "groupname": "Pre-Windows 2000 Compatible Access",
+            "type": "builtin"
+        },
+        "557": {
+            "groupname": "Incoming Forest Trust Builders",
+            "type": "builtin"
+        },
+        "560": {
+            "groupname": "Windows Authorization Access Group",
+            "type": "builtin"
+        },
+        "561": {
+            "groupname": "Terminal Server License Servers",
+            "type": "builtin"
+        },
+        "544": {
+            "groupname": "Administrators",
+            "type": "builtin"
+        },
+        "545": {
+            "groupname": "Users",
+            "type": "builtin"
+        },
+        "546": {
+            "groupname": "Guests",
+            "type": "builtin"
+        },
+        "550": {
+            "groupname": "Print Operators",
+            "type": "builtin"
+        },
+        "551": {
+            "groupname": "Backup Operators",
+            "type": "builtin"
+        },
+        "552": {
+            "groupname": "Replicator",
+            "type": "builtin"
+        },
+        "555": {
+            "groupname": "Remote Desktop Users",
+            "type": "builtin"
+        },
+        "556": {
+            "groupname": "Network Configuration Operators",
+            "type": "builtin"
+        },
+        "558": {
+            "groupname": "Performance Monitor Users",
+            "type": "builtin"
+        },
+        "559": {
+            "groupname": "Performance Log Users",
+            "type": "builtin"
+        },
+        "562": {
+            "groupname": "Distributed COM Users",
+            "type": "builtin"
+        },
+        "568": {
+            "groupname": "IIS_IUSRS",
+            "type": "builtin"
+        },
+        "569": {
+            "groupname": "Cryptographic Operators",
+            "type": "builtin"
+        },
+        "573": {
+            "groupname": "Event Log Readers",
+            "type": "builtin"
+        },
+        "574": {
+            "groupname": "Certificate Service DCOM Access",
+            "type": "builtin"
+        },
+        "575": {
+            "groupname": "RDS Remote Access Servers",
+            "type": "builtin"
+        },
+        "576": {
+            "groupname": "RDS Endpoint Servers",
+            "type": "builtin"
+        },
+        "577": {
+            "groupname": "RDS Management Servers",
+            "type": "builtin"
+        },
+        "578": {
+            "groupname": "Hyper-V Administrators",
+            "type": "builtin"
+        },
+        "579": {
+            "groupname": "Access Control Assistance Operators",
+            "type": "builtin"
+        },
+        "580": {
+            "groupname": "Remote Management Users",
+            "type": "builtin"
+        },
+        "582": {
+            "groupname": "Storage Replica Administrators",
+            "type": "builtin"
+        },
+        "498": {
+            "groupname": "Enterprise Read-only Domain Controllers",
+            "type": "domain"
+        },
+        "512": {
+            "groupname": "Domain Admins",
+            "type": "domain"
+        },
+        "513": {
+            "groupname": "Domain Users",
+            "type": "domain"
+        },
+        "514": {
+            "groupname": "Domain Guests",
+            "type": "domain"
+        },
+        "515": {
+            "groupname": "Domain Computers",
+            "type": "domain"
+        },
+        "516": {
+            "groupname": "Domain Controllers",
+            "type": "domain"
+        },
+        "518": {
+            "groupname": "Schema Admins",
+            "type": "domain"
+        },
+        "519": {
+            "groupname": "Enterprise Admins",
+            "type": "domain"
+        },
+        "520": {
+            "groupname": "Group Policy Creator Owners",
+            "type": "domain"
+        },
+        "521": {
+            "groupname": "Read-only Domain Controllers",
+            "type": "domain"
+        },
+        "522": {
+            "groupname": "Cloneable Domain Controllers",
+            "type": "domain"
+        },
+        "525": {
+            "groupname": "Protected Users",
+            "type": "domain"
+        },
+        "526": {
+            "groupname": "Key Admins",
+            "type": "domain"
+        },
+        "527": {
+            "groupname": "Enterprise Key Admins",
+            "type": "domain"
+        },
+        "1110": {
+            "groupname": "DnsUpdateProxy",
+            "type": "domain"
+        },
+        "1610": {
+            "groupname": "Tier 2 Admins",
+            "type": "domain"
+        },
+        "1611": {
+            "groupname": "Tier 1 Admins",
+            "type": "domain"
+        },
+        "1612": {
+            "groupname": "Tier 0 Admins",
+            "type": "domain"
+        },
+        "1613": {
+            "groupname": "HR Share RW",
+            "type": "domain"
+        },
+        "1614": {
+            "groupname": "Internet Access",
+            "type": "domain"
+        },
+        "1615": {
+            "groupname": "Server Admins",
+            "type": "domain"
+        }
+    },
+    "shares": {
+        "ADMIN$": {
+            "type": "Disk",
+            "comment": "Remote Admin",
+            "access": {
+                "mapping": "denied",
+                "listing": "n/a"
+            }
+        },
+        "AnonShare": {
+            "type": "Disk",
+            "comment": "",
+            "access": {
+                "mapping": "ok",
+                "listing": "ok"
+            }
+        },
+        "C$": {
+            "type": "Disk",
+            "comment": "Default share",
+            "access": {
+                "mapping": "denied",
+                "listing": "n/a"
+            }
+        },
+        "IPC$": {
+            "type": "IPC",
+            "comment": "Remote IPC",
+            "access": {
+                "mapping": "ok",
+                "listing": "denied"
+            }
+        },
+        "NETLOGON": {
+            "type": "Disk",
+            "comment": "Logon server share",
+            "access": {
+                "mapping": "denied",
+                "listing": "n/a"
+            }
+        },
+        "SharedFiles": {
+            "type": "Disk",
+            "comment": "",
+            "access": {
+                "mapping": "ok",
+                "listing": "ok"
+            }
+        },
+        "SYSVOL": {
+            "type": "Disk",
+            "comment": "Logon server share",
+            "access": {
+                "mapping": "denied",
+                "listing": "n/a"
+            }
+        },
+        "UserBackups": {
+            "type": "Disk",
+            "comment": "",
+            "access": {
+                "mapping": "ok",
+                "listing": "ok"
+            }
+        }
+    },
+    "policy": {
+        "Domain password information": {
+            "Password history length": 24,
+            "Minimum password length": 7,
+            "Minimum password age": "1 day 4 minutes",
+            "Maximum password age": "41 days 23 hours 53 minutes",
+            "Password properties": [
+                {
+                    "DOMAIN_PASSWORD_COMPLEX": true
+                },
+                {
+                    "DOMAIN_PASSWORD_NO_ANON_CHANGE": false
+                },
+                {
+                    "DOMAIN_PASSWORD_NO_CLEAR_CHANGE": false
+                },
+                {
+                    "DOMAIN_PASSWORD_LOCKOUT_ADMINS": false
+                },
+                {
+                    "DOMAIN_PASSWORD_PASSWORD_STORE_CLEARTEXT": false
+                },
+                {
+                    "DOMAIN_PASSWORD_REFUSE_PASSWORD_CHANGE": false
+                }
+            ]
+        },
+        "Domain lockout information": {
+            "Lockout observation window": "2 minutes",
+            "Lockout duration": "2 minutes",
+            "Lockout threshold": 10
+        },
+        "Domain logoff information": {
+            "Force logoff time": "not set"
+        }
+    },
+    "printers": null,
+    "errors": {
+        "nmblookup": {
+            "enum_netbios": [
+                "Could not get NetBIOS names information via 'nmblookup': timed out"
+            ]
+        },
+        "domain": {
+            "enum_netbios": [
+                "Could not get NetBIOS names information via 'nmblookup': timed out"
+            ]
+        },
+        "sessions": {
+            "enum_sessions": [
+                "Could not establish guest session: STATUS_LOGON_FAILURE"
+            ]
+        },
+        "printers": {
+            "enum_printers": [
+                "Could not get printer info via 'enumprinters': STATUS_ACCESS_DENIED"
+            ]
+        }
+    }
+}

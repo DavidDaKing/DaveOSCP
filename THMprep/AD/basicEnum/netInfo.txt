@@ -1,0 +1,5 @@
+Me (Kali Linux) -> 10.250.11.7
+
+Windows Workstation -> 10.211.11.20 
+
+Domain Controller -> 10.211.11.10
