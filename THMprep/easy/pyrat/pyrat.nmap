@@ -1,0 +1,5 @@
+# Nmap 7.95 scan initiated Wed Sep 17 15:01:42 2025 as: /usr/lib/nmap/nmap --privileged -sV -sC -p- -T4 -oG pyrat.nmap -v 10.201.50.116
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.201.50.116 ()	Status: Up
+Host: 10.201.50.116 ()	Ports: 22/open/tcp//ssh//OpenSSH 8.2p1 Ubuntu 4ubuntu0.13 (Ubuntu Linux; protocol 2.0)/, 8000/open/tcp//http-alt//SimpleHTTP|0.6 Python|3.11.2/	Ignored State: closed (65533)
+# Nmap done at Wed Sep 17 15:12:08 2025 -- 1 IP address (1 host up) scanned in 626.67 seconds

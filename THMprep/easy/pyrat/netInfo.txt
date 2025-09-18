@@ -1,0 +1,5 @@
+Me (Kali Linux) -> 10.21.189.250
+
+Pyrat (Linux) -> 10.201.50.116:
+   username = think
+   password = _TH1NKINGPirate$_
