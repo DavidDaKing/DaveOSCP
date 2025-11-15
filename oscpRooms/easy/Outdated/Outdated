@@ -1,4 +1,22 @@
 Outdated - Linux Privilege Escalation; 
- - Enumerate the target systems and Identify mPDF 6.0 and Webmin 1.996 
+ - Enumerate the target systems and Identify mPDF 6.0 and Webmin 1.996
+	- Found an HTML to PDF converter web app running on port 80 (http) 
+
  - Exploit the mPDF annotation vulnerability to leak sensitive files
- - Extract credentials from config file and gain SSH 
+	- https://github.com/mpdf/mpdf/issues/356
+	- extracted /etc/passwd 
+	- extracted /etc/shadow  
+
+- Extract credentials from config file and gain SSH 
+	- credentials found: svc-account : best&_#Password@2021!!!
+
+- Inital foothold achieve, privilege escalation must be done. 
+	- May have to practice port forwarding again
+		- 10000/tcp filtered snet-sensor-mgmt
+	
+	- svc-account@outdated:/$ ssh tunneluser@192.168.45.249 -R 10000:192.168.205.232:10000 -N 
+
+- Privilege escalation through internal service :
+	File used: 50998 -> EBD-ID 
+	CVE(2022-36446)
+
