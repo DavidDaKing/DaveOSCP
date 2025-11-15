@@ -1,0 +1,4 @@
+Outdated - Linux Privilege Escalation; 
+ - Enumerate the target systems and Identify mPDF 6.0 and Webmin 1.996 
+ - Exploit the mPDF annotation vulnerability to leak sensitive files
+ - Extract credentials from config file and gain SSH 
