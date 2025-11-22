@@ -1,0 +1,33 @@
+SunsetDecoy - Linux Machine 
+
+  Enumeration: 
+    - 22 (OpenSSH 7.9p1 Debian 10+deb10u2)
+    - 80 (Apache/2.4.38Apache/2.4.38)i
+        - Nmap finding: 
+                      |_http-title: Index of /
+                      |_http-server-header: Apache/2.4.38 (Debian)
+                      | http-ls: Volume /
+                      | SIZE  TIME              FILENAME
+                      | 3.0K  2020-07-07 16:36  save.zip
+                      |_
+                      Service Info: Host: 127.0.0.1; OS: Linux; CPE: CPE
+ 
+     - 631/udp  open|filtered ipp
+     - 5353/udp open|filtered zeroconf
+
+
+  .zip file located on http apache. Password found: manuel
+      - zip2john save.zip > hash.txt 
+      - john hash.txt --wordlist=/usr/share/wordlists/rockyou.txt 
+
+
+
+  Exploitation: 
+      - /etc/shadow lead me to a weird restricted bash user. 
+      - Ran their sha512crypt hash through hashcat under rockyou wordlists to get a Password
+      - SSH'd into the machine as them, and found that adding -t "bash no profile" ~~ not exactly typed like this 
+      - and typing the full command like /bin/wget . /bin/"command" breaks out of the restricted form
+      - Found chkroot running through a compiled cpp program 
+      - Injected a reverse shell in the /tmp/update directory -> per chkrootkit vulnerability 
+      - got root
+

@@ -1,0 +1,11 @@
+# Nmap 7.95 scan initiated Thu Nov 20 23:42:11 2025 as: /usr/lib/nmap/nmap -sU -oN portscan-udp -v 192.168.198.85
+Increasing send delay for 192.168.198.85 from 800 to 1000 due to 11 out of 23 dropped probes since last increase.
+Nmap scan report for 192.168.198.85
+Host is up (0.027s latency).
+Not shown: 998 closed udp ports (port-unreach)
+PORT     STATE         SERVICE
+631/udp  open|filtered ipp
+5353/udp open|filtered zeroconf
+
+Read data files from: /usr/share/nmap
+# Nmap done at Thu Nov 20 23:59:20 2025 -- 1 IP address (1 host up) scanned in 1028.76 seconds
