@@ -1,0 +1,44 @@
+# Nmap 7.95 scan initiated Mon Nov 24 10:31:41 2025 as: /usr/lib/nmap/nmap --privileged -sV -sC -T4 -p- -v -oN 248.tcp 192.168.107.248
+Nmap scan report for 192.168.107.248
+Host is up (0.034s latency).
+Not shown: 65530 filtered tcp ports (no-response)
+PORT     STATE SERVICE       VERSION
+80/tcp   open  http          Apache httpd 2.4.48 ((Win64) OpenSSL/1.1.1k PHP/7.3.29)
+|_http-title: Sam Elliot | Web Designer
+| http-methods: 
+|   Supported Methods: GET POST OPTIONS HEAD TRACE
+|_  Potentially risky methods: TRACE
+|_http-server-header: Apache/2.4.48 (Win64) OpenSSL/1.1.1k PHP/7.3.29
+443/tcp  open  ssl/http      Apache httpd 2.4.48 ((Win64) OpenSSL/1.1.1k PHP/7.3.29)
+|_http-server-header: Apache/2.4.48 (Win64) OpenSSL/1.1.1k PHP/7.3.29
+| http-methods: 
+|   Supported Methods: GET POST OPTIONS HEAD TRACE
+|_  Potentially risky methods: TRACE
+| tls-alpn: 
+|_  http/1.1
+|_ssl-date: TLS randomness does not represent time
+| ssl-cert: Subject: commonName=localhost
+| Issuer: commonName=localhost
+| Public Key type: rsa
+| Public Key bits: 1024
+| Signature Algorithm: sha1WithRSAEncryption
+| Not valid before: 2009-11-10T23:48:47
+| Not valid after:  2019-11-08T23:48:47
+| MD5:   a0a4:4cc9:9e84:b26f:9e63:9f9e:d229:dee0
+|_SHA-1: b023:8c54:7a90:5bfa:119c:4e8b:acca:eacf:3649:1ff6
+|_http-title: Sam Elliot | Web Designer
+445/tcp  open  microsoft-ds?
+3306/tcp open  mysql         MariaDB 10.3.24 or later (unauthorized)
+7680/tcp open  pando-pub?
+
+Host script results:
+| smb2-time: 
+|   date: 2025-11-24T15:34:09
+|_  start_date: N/A
+| smb2-security-mode: 
+|   3:1:1: 
+|_    Message signing enabled but not required
+
+Read data files from: /usr/share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Nov 24 10:34:47 2025 -- 1 IP address (1 host up) scanned in 186.81 seconds

@@ -1,0 +1,11 @@
+Sams - Windows Machine 
+
+  - Enumeration: 
+      - 3306 - MariaDB 
+      - 80 - http
+      - 445 - msds
+      - 7680 - pandopub
+  
+  - Web app enumeration:
+    In this particular box, enumeration is done to identify the CMS running on the website and the version number.
+    It is then ran under a searchsploit command to find a list of possible vulnerabilities. 
