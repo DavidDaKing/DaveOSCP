@@ -1,0 +1,9 @@
+Fired - Linux Machine *web 
+
+ UTILIZED 2023-32315 python exploit script to create a new user. vmlinuz
+
+ Uploaded a false management java plugin to achieve RCE. 
+
+ uploaded a malicious .sh script to /tmp to gain a reverse shell 
+
+ enumerate the embedded database directory to find clear text credentials for root. 
