@@ -1,0 +1,13 @@
+Wpwn - Linux Machine 
+
+  Enumeration : 
+    - ssh 22; OpenSSH 7.9p1 Debian 10+deb10u2 
+
+    - http 80; wordpress 
+
+
+  Web app directory : 
+    - social-warfare plugin exploit 
+    - php rev shell
+    - python2 file.py -t {url} {payload}
+        
