@@ -1,0 +1,20 @@
+ Funbox - linux
+
+
+ Enumeration : 
+      - 80 : apache 2.4.49 
+            - EDB-ID; 50383 -> Didn't lead to exploit 
+
+            - Enumerate sub directorys w/ -x .html,.js,.php 
+            - Find endpoint mini.php: 
+            - Upload web shell php or edit mini.php for a reverse shell
+
+      - ssh 22:
+
+
+ Foothold Session (var/www/html) : 
+
+      - cat /etc/passwd -> gives a list of users 
+          - stored all users in a users.txt. Hydra the users with rockyou.txt 
+      - cat /etc/shadow -> gives their hashes X Permission denied 
+      - Found an md5 crypt in the output of /etc/passwd 
